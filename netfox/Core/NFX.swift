@@ -115,6 +115,7 @@ open class NFX: NSObject
     fileprivate func register()
     {
         URLProtocol.registerClass(NFXProtocol.self)
+        URLSessionConfiguration.implementNetfox()
     }
     
     fileprivate func unregister()
